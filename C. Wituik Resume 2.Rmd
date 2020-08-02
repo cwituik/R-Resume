@@ -1,7 +1,7 @@
 ---
 name: Christopher Wituik
 position: "Registered Nurse | Epidemiologist | Infection Control Specialist"
-address: "51 Dacotah Street. St. Catharines, ON"
+address:
 phone: +1 289-456-4242
 www: 
 email: "christopher.wituik@gmail.com"
