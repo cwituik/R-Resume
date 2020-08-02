@@ -1,0 +1,120 @@
+---
+name: Christopher Wituik
+position: "Registered Nurse | Epidemiologist | Infection Control Specialist"
+address: "51 Dacotah Street. St. Catharines, ON"
+phone: +1 289-456-4242
+www: 
+email: "christopher.wituik@gmail.com"
+twitter: cwituik
+github: 
+linkedin: christopherwituik
+date: "`r format(Sys.time(), '%B %Y')`"
+output: vitae::awesomecv
+docname: Resume
+headcolor: 414141
+#headcolor: 009ACD
+aboutme: "A Registered Nurse and epidemiologist focusing on the prevention and control of infections and communicable diseases. I have a strong interest in epidemiologic methods, study design, statistical programming, data visualization, and knowledge translation. I am experienced with outbreak investigation and containment, analysis of communicable and non-communicable disease data, and clinical nursing."
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+library(tidyverse)
+```
+# Education
+
+```{r}
+library(tibble)
+tribble(
+   ~ degree, ~ uni, ~ loc, ~ dates, ~ details,
+  "Master of Science in Epidemiology", "London School of Hygiene & Tropical Medicine", "London, England", "November 2019", "Select coursework:    Advanced Statistical Methods in Epidemiology, Epidemiology of Communicable Disease, Modelling and the Dynamics of Communicable Diseases",
+    "Master of Science in Epidemiology", "London School of Hygiene & Tropical Medicine", "London, England", "November 2019", "Research Project: Impact of Police Contact on Access to Hepatitis C Care Among People Who Inject Drugs in Vancouver, Canada",
+     "Master of Science in Epidemiology", "London School of Hygiene & Tropical Medicine", "London, England", "November 2019", "Supervisors: Dr. David Prieto-Merino & Dr. Lianping Ti",
+    "Bachelor of Science in Nursing", "McMaster University", "Hamilton, ON", "June 2015", "BScN Recognition Award – 2015",
+      "Bachelor of Science in Nursing", "McMaster University", "Hamilton, ON", "June 2015", "Cathy Flis Memorial Award, BScN Recognition Award – 2014",
+  "Diploma - Practical Nursing", "Mohawk College", "Hamilton, ON", "December 2011", "Honours graduate"
+) %>% 
+  detailed_entries(degree, dates, uni, loc, details)
+```
+
+# Select Employment and Academic Experience
+
+```{r}
+tribble(
+  ~ role, ~ company, ~ loc, ~ dates, ~ details,
+  "RN Infection Control Professional", "Infection Prevention & Control - St. Joseph's Healthcare Hamilton", "Hamilton, ON", "June 2018 - Present", "IPAC Lead for COVID-19 readiness and response efforts in the Emergency Department including policy and process development, education, and consultation.",
+   "RN Infection Control Professional", "Infection Prevention & Control - St. Joseph's Healthcare Hamilton", "Hamilton, ON", "June 2018 - Present", "Preventing and controlling transmission and outbreaks of epidemiologically significant organisms, monitoring and interpreting infection rates.",
+    "RN Infection Control Professional", "Infection Prevention & Control - St. Joseph's Healthcare Hamilton", "Hamilton, ON", "June 2018 - Present", "Investigating viral respiratory outbreak trends; engaging in data extraction, cleaning, analysis, and visualization with R studio.",
+   "RN Infection Control Professional", "Infection Prevention & Control - St. Joseph's Healthcare Hamilton", "Hamilton, ON", "June 2018 - Present", "Engaging in knowledge dissemination, education, and collaboration with various professional disciplines and members of the public.",
+  "Graduate Student Research Assistant", "BC Centre on Substance Use (BCCSU)", "Vancouver, BC", "July 2019", "Analyzed two longitudinal cohorts, the Vancouver Injection Drug Users Study
+(VIDUS), and the AIDS Care Cohort to Evaluate Exposure to Survival Services (ACCESS) to evaluate the impact of police contact on access to hepatitis C care among people who inject drugs.",
+ "Graduate Student Research Assistant", "BC Centre on Substance Use (BCCSU)", "Vancouver, BC", "July 2019", "Independently conceived of study question; conducted data cleaning, coding, and analysis; and wrote report detailing methods, results, and interpretation.",
+ "Graduate Student Research Assistant", "BC Centre on Substance Use (BCCSU)", "Vancouver, BC", "July 2019", "Achieved a working knowledge of with R statistical software through independent learning in order to conduct analysis as per BCCSU policy.",
+"RN Infection Control Professional", "Infection Prevention & Control - Brant Community Healthcare System", "Brantford, ON", "March 2017 - May 2018", "Improved surveillance system through discovering an issue with patient-day calculations and collaborated with the Health Records department to ensure provision of accurate denominators for calculation of C. difficile infection rates.",
+"RN Infection Control Professional", "Infection Prevention & Control - Brant Community Healthcare System", "Brantford, ON", "March 2017 - May 2018", "Designed and implemented a cross-sectional study of Catheter-Association Urinary Tract Infections. Engaged in knowledge dissemination to internal stakeholders to improve urinary catheter management throughout the organization.",
+"RN Infection Control Professional", "Infection Prevention & Control - Brant Community Healthcare System", "Brantford, ON", "March 2017 - May 2018", "Invited to sit on the Brant Community Healthcare System Research Ethics Committee. Reviewed multiple clinical studies for methodological and ethical rigor.",
+"Clinical Nursing", "Hamilton Health Sciences, St. Joseph's Healthcare Hamilton, Victorian Order of Nurses", "Hamilton, ON", "2012 - 2017", "Honed leadership, organization and prioritization skills which allow me to adapt to rapidly changing circumstances",
+"Research Assistant", "Collaboratory for Research on Urban Neighbourhoods, Community Health, and Housing - McMaster University", "Hamilton, ON", "2013 - 2014", "Developed a working knowledge of questionnaire design, interviewing, data coding and entry, data checks, and participant recruitment",
+"Research Assistant", "Collaboratory for Research on Urban Neighbourhoods, Community Health, and Housing - McMaster University", "Hamilton, ON", "2013 - 2014", " Administered a standard questionnaire to ascertain perceptions of community, neighbourhood, and health." 
+
+) %>% 
+  detailed_entries(role, dates, company, loc, details)
+```
+
+# Certification, Registration, and Professional Development
+
+```{r}
+tribble(
+  ~ role, ~ company, ~ dates,
+"Certification in Infection Control", "Certification Board of Infection Control and Epidemiology (CBIC)", "2019 - Present",
+"Registered Nurse", "College of Nurses of Ontario (#15091963)", "2015 - Present",
+"TCPS 2: CORE Course on Research Ethics", "Government of Canada", "June 2019"
+) %>% 
+  detailed_entries(company, dates, role)
+```
+
+# Professional Organizations 
+
+```{r}
+tribble(
+  ~ role, ~ company, ~ dates,
+"Association of Public Health Epidemiologists of Ontario (APHEO)", "Affiliate Member", "2016 - Present",
+"Infection Prevention & Control Canada (IPAC Canada)", "Member", "2017 - Present",
+"Registered Nurses Association of Ontario (RNAO)", "Member", "June 2019"
+) %>% 
+  detailed_entries(company, dates, role)
+```
+
+# Volunteer Experience
+
+```{r}
+tribble(
+  ~ role, ~ company, ~ dates,
+"COVID-19 Epidemiology Volunteer", "London School of Hygiene & Tropical Medicine", "2020 - Present",
+"Harm Reduction Volunteer", "Positive Living Niagara - Streetworks Outreach Program and Consumption and Treatment Services", "2017 - Present",
+"RPN-BScN Stream Representative / Education Chairperson", "McMaster University Nursing Students’ Society", "2012 - 2015"
+) %>% 
+  detailed_entries(company, dates, role)
+```
+
+# Skills
+
+## Technical Skills
+
+* Data management and entry: Microsoft Excel, EpiData
+* Statistical analysis and data visualization: Stata, R, developing competence in SAS and Tableau
+* Visuals and presentations: Microsoft PowerPoint
+
+## Languages
+* English (native); French (beginner)
+
+# Publications
+
+```{r}
+tribble(
+ ~ name, ~ journal, ~ date, ~type, ~ bib,
+  "A case for integrating substance use harm reduction into IPAC practice in acute care settings", "Canadian Journal of Infection Control", "November 2019", "Letter to the Editor", "\\textbf{Wituik, C}. (2019). A case for integrating substance use harm reduction into IPAC practice in acute care settings. Canadian Journal of Infection Control, 34(3), 146–147."
+) %>%
+  detailed_entries(journal, date, name, type, bib, .protect = F)
+  
+```
+
